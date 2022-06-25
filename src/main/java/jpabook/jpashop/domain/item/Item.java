@@ -40,6 +40,6 @@ public class Item {
         if(rest<0){
             throw new NotEnoughStockException("need more stock");
         }
-        this.stockQuantity -= rest;
+        this.stockQuantity = rest;
     }
 }
